@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    font-family: "Poppins";
+    background:#2fa08d;
+}
+.container{
+ position: absolute;
+
+ width: 90vmin;
+ transform: translate(-50%, -50%);
+ top: 50%;
+ left: 50%;
+  padding:90px 50px ;
+  border-radius: 44px;
+background: linear-gradient(225deg, #2fa08d, #38bea8);
+box-shadow:  35px -35px 66px #15473f,
+             -35px 35px 66px #53fffb;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input{
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(223, 255, 61);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.49);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    transition: all ease-in 0s;
+}
+input:hover{
+    border: 1px solid  rgb(223, 255, 61);
+   
+}
+.result{
+    position: relative;
+    
+}
+.searchhead{
+    font-size: 30px;
+    
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+.detales{
+    display: flex;
+    margin: 10px 0 20px;
+    gap: 10px;
+    color: gray;
+    font-size: 14px;
+}
+.meaning{
+    color: #000000da;
+}
+.example{
+    font-style: italic;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-left: 7px solid rebeccapurple;
+}
+
+
+
+
+
+
+
+/* From Uiverse.io by mrhyddenn */ 
+button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(223, 255, 61);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #000000;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: rgba(41, 248, 193, 0.605);
+    box-shadow: 0 0 30px 5px rgba(0, 236, 169, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+  @media  screen and (max-width: 470px) {
+    .search-box input{
+        width: 50%;
+      
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    body{
+        background:#13e447;
+    }
+    .container{
+        background: linear-gradient(225deg, #16a12f, #58ff71);
+box-shadow:  35px -35px 66px #15473f,
+             -35px 35px 66px #3ce648;
+             padding:50px 20px ;
+             width:70vmin ;
+             padding: fixed;
+    }
+  }
